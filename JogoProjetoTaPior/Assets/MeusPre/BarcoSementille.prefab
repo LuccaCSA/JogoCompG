@@ -405,6 +405,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 54648615545356970, guid: 4c88c007ef6c3b94ebaf72653ec775a6, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54648615545356970, guid: 4c88c007ef6c3b94ebaf72653ec775a6, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -499,15 +507,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3750375575203257701, guid: 86e8cd1cf4506b148a0dc2922f6e7f0b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.2340498
+      value: 0.9199101
       objectReference: {fileID: 0}
     - target: {fileID: 3750375575203257701, guid: 86e8cd1cf4506b148a0dc2922f6e7f0b, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.25385574
+      value: 0.18923423
       objectReference: {fileID: 0}
     - target: {fileID: 3750375575203257701, guid: 86e8cd1cf4506b148a0dc2922f6e7f0b, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.3625307
+      value: 0.2702449
       objectReference: {fileID: 0}
     - target: {fileID: 3750375575203257701, guid: 86e8cd1cf4506b148a0dc2922f6e7f0b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -869,27 +877,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1486790438441359267, guid: 37ad98a8d28f9a740969722fe002838a, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.5187993
+      value: 1.4925903
       objectReference: {fileID: 0}
     - target: {fileID: 1486790438441359267, guid: 37ad98a8d28f9a740969722fe002838a, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.5188
+      value: 1.4925907
       objectReference: {fileID: 0}
     - target: {fileID: 1486790438441359267, guid: 37ad98a8d28f9a740969722fe002838a, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2.5187993
+      value: 1.4925903
       objectReference: {fileID: 0}
     - target: {fileID: 1486790438441359267, guid: 37ad98a8d28f9a740969722fe002838a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.19
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 1486790438441359267, guid: 37ad98a8d28f9a740969722fe002838a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.428277
+      value: 14.37
       objectReference: {fileID: 0}
     - target: {fileID: 1486790438441359267, guid: 37ad98a8d28f9a740969722fe002838a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -24.54
+      value: -23.89
       objectReference: {fileID: 0}
     - target: {fileID: 1486790438441359267, guid: 37ad98a8d28f9a740969722fe002838a, type: 3}
       propertyPath: m_LocalRotation.w

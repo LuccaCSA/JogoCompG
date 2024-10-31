@@ -1,19 +1,28 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
 public class Movimento : MonoBehaviour
 {
     public float moveSpeed = 5f;  // Velocidade de movimento
+    private Rigidbody rb;
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+        // Define a detecção de colisão para contínua
+        rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
+    }
 
     void Update()
     {
-        // Captura a entrada do jogador nos eixos horizontal e vertical
         float moveX = Input.GetAxis("Horizontal");
         float moveZ = Input.GetAxis("Vertical");
 
-        // Cria um vetor de movimento baseado na entrada do jogador
         Vector3 move = transform.right * moveX + transform.forward * moveZ;
 
-        // Aplica o movimento ao jogador
-        transform.position += move * moveSpeed * Time.deltaTime;
+        // Calcula a nova posição, mas agora o Rigidbody gerencia o movimento e as colisões
+        Vector3 newPosition = rb.position + move * moveSpeed * Time.deltaTime;
+
+        rb.MovePosition(newPosition);
     }
 }
