@@ -124,9 +124,11 @@ public class GerenciadorEventosBarcos : MonoBehaviour
         // **Inicia o movimento de boia apenas quando o barco chega ao estado final**
         StartCoroutine(MovimentoDeBoia(barco));
 
+        
         // Ativa o decremento da barra de ouro apenas quando o barco estiver parado e no movimento de boia
         if (controleBarraOuro != null)
         {
+            Debug.Log("aqui jas um barco");
             controleBarraOuro.AtualizarBarcosAtivos(1); // Adiciona 1 barco ativo
         }
     }

@@ -12,7 +12,7 @@ namespace MagicPigGames
 
         private float _ultimoProgress = 0f;
         private ProgressBar _progressBar;
-        private int barcosAtivos = 0; // Contador de barcos ativos
+        private int barcosAtivos = 1; // Contador de barcos ativos
         private bool incrementoAtivo = false; // Controle de incremento contínuo
 
         void Awake()
@@ -92,7 +92,7 @@ namespace MagicPigGames
             float incremento = valorIncremento * barcosAtivos * Time.deltaTime;
             progress = Mathf.Clamp(progress + incremento, 0f, 1f);
 
-            Debug.Log("Barra incrementada: " + progress);
+            // Debug.Log("Barra incrementada: " + progress);
 
             // Verifica se o progresso atingiu o máximo e termina o jogo
             if (Mathf.Approximately(progress, 1f))
