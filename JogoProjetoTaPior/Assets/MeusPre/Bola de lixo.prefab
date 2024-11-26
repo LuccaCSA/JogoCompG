@@ -947,6 +947,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GarrafaVinho (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5210952788693309131, guid: ad5714941dc35bd46b38723ab804ec95, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5210952788693309131, guid: ad5714941dc35bd46b38723ab804ec95, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5822821453014100382, guid: ad5714941dc35bd46b38723ab804ec95, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
