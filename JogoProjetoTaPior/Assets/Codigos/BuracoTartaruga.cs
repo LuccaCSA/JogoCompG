@@ -10,6 +10,7 @@ public class BuracoTartaruga : MonoBehaviour
     public float alturaInicialGaivotas = 10f;    // Altura inicial das gaivotas
     public float velocidadeGaivotas = 5f;    // Velocidade de descida das gaivotas
     public float velocidadeTartarugas = 2f;  // Velocidade das tartarugas ao subir o buraco
+    
 
     public Collider jogadorCollider; // Referência ao collider do jogador
 
