@@ -28,6 +28,10 @@ public class GerenciadorEventosBarcos : MonoBehaviour
     public FarolController farolController;  // Referência ao controlador do farol
     public ControleBarraOuro controleBarraOuro; // Referência ao script de controle da barra de ouro
 
+    public AudioSource audioSource;
+    public AudioClip somBarco; 
+
+
     void Start()
     {
         // Inicia o ciclo de spawn de barcos após o intervalo inicial
@@ -101,6 +105,15 @@ public class GerenciadorEventosBarcos : MonoBehaviour
         // Expande o barco até a escala original
         while (tempoPassado < tempoDeExpansao || Vector3.Distance(barco.transform.position, destino) > 0.1f)
         {
+            //att tg
+            // Toca o som de movimento do barco, se ainda não estiver tocando
+            if (!audioSource.isPlaying)
+            {
+                audioSource.clip = somBarco;
+                audioSource.Play();
+            }
+            //
+            
             // Move o barco
             barco.transform.position = Vector3.MoveTowards(barco.transform.position, destino, velocidade * Time.deltaTime);
 
@@ -115,6 +128,9 @@ public class GerenciadorEventosBarcos : MonoBehaviour
             yield return null;
         }
 
+        //att tg
+        audioSource.Stop();
+        //
         // Após o movimento, realiza a rotação suave
         yield return StartCoroutine(RotacionarBarco(barco, rotacaoDesejada, tempoDeRotacao));
 

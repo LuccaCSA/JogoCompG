@@ -4,5 +4,20 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 9e40695605bc1fb44a84fad8ec22ea82
+  - enabled: 1
+    path: Assets/Scenes/MainJogo.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/BossFight.unity
+    guid: d66c717ea1ab7944cad645c34875facb
+  - enabled: 1
+    path: Assets/Scenes/TelaDerrotaPirata.unity
+    guid: ba725faa3ecb7c2489e0540187298f7b
+  - enabled: 1
+    path: "Assets/Scenes/Vit\xF3ria.unity"
+    guid: bd581054817fb65438cc50fc863bac8e
   m_configObjects: {}

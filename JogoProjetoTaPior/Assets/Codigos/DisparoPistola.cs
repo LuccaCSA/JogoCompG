@@ -10,6 +10,11 @@ public class DisparoPistola : MonoBehaviour
 
     private float nextFireTime = 0f;
 
+//alteracao TG
+    public AudioSource audioSource; // Referência ao AudioSource
+    public AudioClip disparoClip;   // Referência ao AudioClip do disparo
+//
+
     void Update()
     {
         if (Input.GetButton("Fire1") && Time.time >= nextFireTime)
@@ -37,6 +42,14 @@ public class DisparoPistola : MonoBehaviour
         rb.velocity = firePoint.forward * projectileSpeed;
 
         proj.AddComponent<Projetil>().ConfigurarDano(dano);
+
+        //Alteracao TG
+         // Reproduzindo o som de disparo
+        if (audioSource != null && disparoClip != null)
+        {
+            audioSource.PlayOneShot(disparoClip);
+        }
+        //
     }
 }
 

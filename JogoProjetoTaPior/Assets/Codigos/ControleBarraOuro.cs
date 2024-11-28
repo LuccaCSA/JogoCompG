@@ -29,7 +29,7 @@ namespace MagicPigGames
             if (_progressBar != null)
             {
                 _progressBar.SetProgress(progress); // Inicializa a barra cheia
-                Debug.Log("Barra inicializada com progresso: " + progress);
+                //Debug.Log("Barra inicializada com progresso: " + progress);
             }
         }
 
@@ -47,7 +47,7 @@ namespace MagicPigGames
             // Incrementa a barra continuamente se houver barcos ativos
             if (incrementoAtivo && barcosAtivos > 0)
             {
-                Debug.Log("Incrementando a barra... Barcos ativos: " + barcosAtivos);
+               // Debug.Log("Incrementando a barra... Barcos ativos: " + barcosAtivos);
                 IncrementarBarra();
             }
 
@@ -80,7 +80,7 @@ namespace MagicPigGames
             // Ativa ou desativa o incremento conforme o número de barcos ativos
             incrementoAtivo = barcosAtivos > 0;
 
-            Debug.Log("Número de barcos ativos atualizado para: " + barcosAtivos + ", incremento ativo: " + incrementoAtivo);
+           // Debug.Log("Número de barcos ativos atualizado para: " + barcosAtivos + ", incremento ativo: " + incrementoAtivo);
 
             // Atualiza a barra imediatamente após ajustar o número de barcos ativos
             AtualizarBarraDeProgresso();
@@ -97,7 +97,7 @@ namespace MagicPigGames
             // Verifica se o progresso atingiu o máximo e termina o jogo
             if (Mathf.Approximately(progress, 1f))
             {
-                Debug.Log("Ouro esgotado! Fim do jogo.");
+               // Debug.Log("Ouro esgotado! Fim do jogo.");
                 // Adicione a lógica de fim de jogo aqui
             }
         }
@@ -108,7 +108,7 @@ namespace MagicPigGames
             if (_progressBar != null)
             {
                 _progressBar.SetProgress(progress);
-                Debug.Log("Progresso da Barra de Ouro atualizado para: " + progress);
+                //Debug.Log("Progresso da Barra de Ouro atualizado para: " + progress);
             }
         }
     }

@@ -29,6 +29,12 @@ public class TrocaDeArmas : MonoBehaviour
 
     private Coroutine textoCorrotina;    // Referência para a coroutine atual do texto
 
+    //att tg
+    public AudioClip somPistola; // Som da pistola
+    public AudioClip somVassoura; // Som da vassoura
+    public AudioSource audioSource; // Componente AudioSource
+    //
+
     void Start()
     {
         // Armazena o tamanho original da mira
@@ -47,11 +53,28 @@ public class TrocaDeArmas : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             AtivarArma(pistola, miraPistola, tamanhoOriginal, "Pistola de Água", slotPistola, slotVassoura);
+            //att tg
+            // Toca o som associado à arma
+            if (somPistola != null)
+            {
+                audioSource.clip = somPistola;
+                audioSource.Play();
+            }
+        //
         }
         // Tecla 2 para selecionar a vassoura
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             AtivarArma(vassoura, miraVassoura, tamanhoMiraVassoura, "Vassoura", slotVassoura, slotPistola);
+
+            //att tg
+            // Toca o som associado à arma
+            if (somVassoura != null)
+            {
+                audioSource.clip = somVassoura;
+                audioSource.Play();
+            }
+        //
         }
     }
 

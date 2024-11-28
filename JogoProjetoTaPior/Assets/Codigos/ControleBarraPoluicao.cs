@@ -77,7 +77,7 @@ namespace MagicPigGames{
             // Verifica se o progresso atingiu o máximo e termina o jogo
             if (Mathf.Approximately(progress, 1f))
             {
-                Debug.Log("Poluição máxima atingida! Fim do jogo.");
+               // Debug.Log("Poluição máxima atingida! Fim do jogo.");
                 // Adicione a lógica de fim de jogo aqui
             }
         }

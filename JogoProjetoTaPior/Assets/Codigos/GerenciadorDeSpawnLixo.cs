@@ -20,6 +20,9 @@ public class GerenciadorDeSpawnLixo : MonoBehaviour
     private Dictionary<Transform, PlacaAtencao> placasPorSpawn;   // Para controlar as placas de atenção
     private ControleBarraPoluicao controleBarraPoluicao;  // Referência ao controle da barra de poluição
 
+    //att TG
+    public SoundController soundController;
+    //
     void Start()
     {
         // Inicializa o dicionário para rastrear lixos e placas por spawn point
@@ -79,6 +82,14 @@ public class GerenciadorDeSpawnLixo : MonoBehaviour
                 // Adiciona o lixo à lista de lixos desse spawn point
                 lixoPorSpawn[spawnPoint].Add(lixoInstanciado);
 
+                //att TG
+                // Toca o som de spawn do lixo utilizando o SoundController
+                if (soundController != null)
+                {
+                    soundController.PlaySound();  // Toca o som padrão (ou você pode passar parâmetros, como startTime e endTime)
+                }
+                //
+                    
                 // Desativa a placa, caso ainda não esteja no limite
                 if (lixoPorSpawn[spawnPoint].Count < limiteDeLixoPorSpawn)
                 {
