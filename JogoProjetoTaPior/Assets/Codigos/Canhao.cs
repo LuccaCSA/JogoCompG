@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class Canhao : MonoBehaviour
 {
@@ -10,6 +11,13 @@ public class Canhao : MonoBehaviour
     [Header("Configurações do Tiro")]
     public float forcaDisparo = 500f; // Força aplicada ao projétil
     public float tempoVidaExplosao = 2f; // Tempo de vida do efeito de explosão
+
+    //att tg
+     public AudioSource audioSource; 
+    public AudioClip somDisparo; 
+    
+    public AudioClip somExplosao;
+    //
 
     // Método para disparar, chamado pelo gerenciador de canhões
     public void Disparar()
@@ -30,8 +38,31 @@ public class Canhao : MonoBehaviour
             if (efeitoExplosao != null)
             {
                 GameObject explosao = Instantiate(efeitoExplosao, bocaCanhao.position, bocaCanhao.rotation);
-                Destroy(explosao, tempoVidaExplosao); // Destrói o efeito de explosão após o tempo configurado
+                //Destroy(explosao, tempoVidaExplosao); // Destrói o efeito de explosão após o tempo configurado
+            
+                // att tg
+                StartCoroutine(PlaySoundAndDestroy(explosao, tempoVidaExplosao));
+                //
             }
+
+            //att tg                    
+            if (audioSource != null && somDisparo != null)
+            {
+                audioSource.PlayOneShot(somDisparo); 
+            }
+            //
         }
     }
+
+    // att tg
+    private IEnumerator PlaySoundAndDestroy(GameObject explosao, float delay)
+    {
+    
+    yield return new WaitForSeconds(delay - 2.7f);
+
+    audioSource.PlayOneShot(somExplosao);
+
+    Destroy(explosao);
+    }
+    //
 }
