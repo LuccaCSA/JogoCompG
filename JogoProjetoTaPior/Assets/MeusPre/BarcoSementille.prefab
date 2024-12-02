@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3694896157093776161}
   - component: {fileID: 8336017581527740477}
   - component: {fileID: 4501579277892942354}
+  - component: {fileID: 65648454914140073}
   m_Layer: 0
   m_Name: BarcoSementille
   m_TagString: Untagged
@@ -119,6 +120,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 15.011392, y: 16.76278, z: 59.930195}
   m_Center: {x: 1.272343, y: 4.477598, z: -8.480078}
+--- !u!95 &65648454914140073
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2524829300748677641}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1349834077138209816
 PrefabInstance:
   m_ObjectHideFlags: 0
