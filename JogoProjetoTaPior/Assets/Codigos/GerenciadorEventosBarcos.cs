@@ -137,14 +137,11 @@ public class GerenciadorEventosBarcos : MonoBehaviour
         // Garante que a rotação final seja exatamente a desejada
         barco.transform.rotation = rotacaoDesejada;
 
-        // **Inicia o movimento de boia apenas quando o barco chega ao estado final**
-        StartCoroutine(MovimentoDeBoia(barco));
-
         
         // Ativa o decremento da barra de ouro apenas quando o barco estiver parado e no movimento de boia
         if (controleBarraOuro != null)
         {
-            Debug.Log("aqui jas um barco");
+            Debug.Log("barco em posição");
             controleBarraOuro.AtualizarBarcosAtivos(1); // Adiciona 1 barco ativo
         }
     }
@@ -162,22 +159,6 @@ public class GerenciadorEventosBarcos : MonoBehaviour
         }
 
         barco.transform.rotation = rotacaoDesejada;
-    }
-
-    IEnumerator MovimentoDeBoia(GameObject barco)
-    {
-        Vector3 posicaoInicial = barco.transform.position;
-        float tempoPassado = 0f;
-
-        while (true)
-        {
-            // Calcula o deslocamento vertical usando uma senoide para criar um movimento de boia
-            float deslocamentoY = amplitudeBoia * Mathf.Sin((tempoPassado / tempoBoia) * Mathf.PI * 2f);
-            barco.transform.position = new Vector3(barco.transform.position.x, posicaoInicial.y + deslocamentoY, barco.transform.position.z);
-
-            tempoPassado += Time.deltaTime;
-            yield return null;
-        }
     }
 
     public void BarcoDestruido()

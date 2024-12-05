@@ -120,3 +120,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vidaInicial: 20
   contornoMaterial: {fileID: 2100000, guid: 0716713af73242546b93e41f13ee4a69, type: 2}
+  tempoAfundando: 2
+  inclinacaoAfundando: -50
+  direcaoAfundar: {x: 0, y: -2, z: 0}

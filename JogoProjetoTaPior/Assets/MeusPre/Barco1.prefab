@@ -99,6 +99,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vidaInicial: 15
   contornoMaterial: {fileID: 2100000, guid: 0716713af73242546b93e41f13ee4a69, type: 2}
+  tempoAfundando: 3
+  inclinacaoAfundando: -50
+  direcaoAfundar: {x: 0, y: -2, z: 0}
 --- !u!65 &3726057165549720307
 BoxCollider:
   m_ObjectHideFlags: 0

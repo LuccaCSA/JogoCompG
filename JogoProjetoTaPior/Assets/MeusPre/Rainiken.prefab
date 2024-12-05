@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1285463216881390122}
   m_Layer: 0
   m_Name: Rainiken
-  m_TagString: Untagged
+  m_TagString: Lixo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -132,8 +132,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.112412974, y: 0.112412944, z: 0.48414254}
-  m_Center: {x: 0, y: 0.00020546466, z: -0.0026914477}
+  m_Size: {x: 0.17379136, y: 0.17024644, z: 0.48414254}
+  m_Center: {x: -0.002587519, y: 0.008239183, z: -0.0026914561}
 --- !u!114 &1285463216881390122
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections;
+
 
 public class Barco : MonoBehaviour, IDanoso
 {
@@ -7,6 +9,10 @@ public class Barco : MonoBehaviour, IDanoso
     private int vidaAtual;         // Vida atual do barco
     private Renderer barcoRenderer; // Referência ao renderizador do barco
     private Material[] materiaisOriginais; // Armazena os materiais originais
+
+    public float tempoAfundando = 2f; // Tempo de afundamento
+    public float inclinacaoAfundando = 50f; // Ângulo de inclinação ao afundar
+    public Vector3 direcaoAfundar = Vector3.down; // Direção do movimento ao afundar
 
     void Start()
     {
@@ -45,13 +51,30 @@ public class Barco : MonoBehaviour, IDanoso
         // Verifica se a vida chegou a zero ou menos
         if (vidaAtual <= 0)
         {
-            DestruirBarco();
+            StartCoroutine(AfundarBarco());
         }
     }
 
-    void DestruirBarco()
+    IEnumerator AfundarBarco()
     {
-        // Destroi o barco
+        Debug.Log("Barco começando a afundar...");
+
+        // Define a rotação final do barco
+        Quaternion rotacaoFinal = Quaternion.Euler(inclinacaoAfundando, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);
+
+        float tempoPassado = 0f;
+
+        // Move e inclina o barco para simular o afundamento
+        while (tempoPassado < tempoAfundando)
+        {
+            transform.rotation = Quaternion.Slerp(transform.rotation, rotacaoFinal, Time.deltaTime * 2);
+            transform.position += direcaoAfundar * Time.deltaTime;
+            tempoPassado += Time.deltaTime;
+            yield return null;
+        }
+
+        Debug.Log("Barco destruído.");
+        // Destrói o barco após o afundamento
         Destroy(gameObject);
     }
 }
