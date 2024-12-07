@@ -1,5 +1,6 @@
 using UnityEngine;
 using Cinemachine;
+using UnityEngine.SceneManagement;
 
 public class CutsceneController : MonoBehaviour
 {
@@ -56,6 +57,6 @@ public class CutsceneController : MonoBehaviour
     {
         Debug.Log("Cutscene terminou!");
         // Se necessário, você pode carregar outra cena:
-        // SceneManager.LoadScene("NomeDaProximaCena");
+        SceneManager.LoadScene("BossFight");
     }
 }

@@ -26,7 +26,6 @@ public class CountdownTimer : MonoBehaviour
         {
             currentTime -= Time.deltaTime; // Decrementa o tempo
             UpdateTimerText();
-
             // Inicia a animação nos últimos 10 segundos
             if (currentTime <= 10f && !isAnimating)
             {
