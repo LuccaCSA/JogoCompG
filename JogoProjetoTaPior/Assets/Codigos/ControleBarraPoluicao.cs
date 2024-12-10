@@ -14,6 +14,9 @@ namespace MagicPigGames{
         private int placasAtivas = 0; // Contador de placas ativas
         private bool incrementoAtivo = false; // Controle de incremento contínuo
 
+        //att tg
+        public ChangeScene changeScene;
+        //
         void Start()
         {
             // Inicializa o progresso da barra como zero
@@ -79,6 +82,7 @@ namespace MagicPigGames{
             {
                // Debug.Log("Poluição máxima atingida! Fim do jogo.");
                 // Adicione a lógica de fim de jogo aqui
+                changeScene.LoadScene("TelaDerrotaLixo");
             }
         }
     }

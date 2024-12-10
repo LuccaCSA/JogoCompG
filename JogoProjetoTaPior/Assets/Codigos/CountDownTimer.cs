@@ -14,6 +14,10 @@ public class CountdownTimer : MonoBehaviour
     private float currentTime;
     private bool isAnimating = false;
 
+    //att tg
+    public ChangeScene changeScene;
+    //
+
     void Start()
     {
         currentTime = countdownTime; // Define o tempo inicial
@@ -80,6 +84,6 @@ public class CountdownTimer : MonoBehaviour
 
     void ChangeScene()
     {
-        SceneManager.LoadScene(nextScene); // Troca para a próxima cena
+        changeScene.LoadScene(nextScene);
     }
 }

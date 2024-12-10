@@ -8,6 +8,9 @@ public class CutsceneController : MonoBehaviour
     public float[] cameraDurations; // Duração de cada câmera (em segundos)
     private int currentCameraIndex = 0;
 
+    //att tg
+    public ChangeScene changeScene;
+    //
     void Start()
     {
         // Desativa todas as Virtual Cameras no início
@@ -55,8 +58,8 @@ public class CutsceneController : MonoBehaviour
 
     void EndCutscene()
     {
-        Debug.Log("Cutscene terminou!");
+       // Debug.Log("Cutscene terminou!");
         // Se necessário, você pode carregar outra cena:
-        SceneManager.LoadScene("BossFight");
+        changeScene.LoadScene("BossFight");
     }
 }
