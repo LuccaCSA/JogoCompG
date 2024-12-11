@@ -12,7 +12,7 @@ namespace MagicPigGames
 
         private float _ultimoProgress = 0f;
         private ProgressBar _progressBar;
-        private int barcosAtivos = 1; // Contador de barcos ativos
+        private int barcosAtivos = 0; // Contador de barcos ativos
         private bool incrementoAtivo = false; // Controle de incremento contínuo
 
         //att tg
@@ -83,7 +83,7 @@ namespace MagicPigGames
             // Ativa ou desativa o incremento conforme o número de barcos ativos
             incrementoAtivo = barcosAtivos > 0;
 
-           // Debug.Log("Número de barcos ativos atualizado para: " + barcosAtivos + ", incremento ativo: " + incrementoAtivo);
+           Debug.Log("Número de barcos ativos atualizado para: " + barcosAtivos + ", incremento ativo: " + incrementoAtivo);
 
             // Atualiza a barra imediatamente após ajustar o número de barcos ativos
             AtualizarBarraDeProgresso();

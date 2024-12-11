@@ -244,7 +244,7 @@ MonoBehaviour:
   audioClip: {fileID: 8300000, guid: 312a89f7e08ddea4da6fe629194fbe0d, type: 3}
   soundEnabled: 1
   jogador: {fileID: 5944356251942424517}
-  maxDistancia: 40
+  maxDistancia: 60
   adjustVolume: 1
 --- !u!82 &19296727
 AudioSource:
@@ -718,9 +718,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: fdd078963ff51dc4695f2aefec4de425, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.2
+  m_Volume: 0.504
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -974,7 +974,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1103.44, y: 1015.8}
+  m_SizeDelta: {x: 2000, y: 2000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &341341892
 MonoBehaviour:
@@ -1464,7 +1464,7 @@ MonoBehaviour:
   audioClip: {fileID: 8300000, guid: 312a89f7e08ddea4da6fe629194fbe0d, type: 3}
   soundEnabled: 1
   jogador: {fileID: 5944356251942424517}
-  maxDistancia: 40
+  maxDistancia: 60
   adjustVolume: 1
 --- !u!1 &606253759 stripped
 GameObject:
@@ -1487,7 +1487,7 @@ MonoBehaviour:
   audioClip: {fileID: 8300000, guid: 312a89f7e08ddea4da6fe629194fbe0d, type: 3}
   soundEnabled: 1
   jogador: {fileID: 5944356251942424517}
-  maxDistancia: 40
+  maxDistancia: 60
   adjustVolume: 1
 --- !u!82 &606253765
 AudioSource:
@@ -2407,7 +2407,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b5df764444b060f4fb607057bad58f30, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 0.567
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2724,8 +2724,8 @@ MonoBehaviour:
   - {fileID: 1089727451241108362, guid: 79c584a5069828b469210fd98c84020a, type: 3}
   - {fileID: 28813517208337146, guid: 3bac3089b57e39343a8f8804a09e6ebc, type: 3}
   - {fileID: 3577024108543364991, guid: 4402aabe2fe3aed4f93e541d054ccfe0, type: 3}
-  tempoMinimo: 1
-  tempoMaximo: 2
+  tempoMinimo: 3
+  tempoMaximo: 5
   limiteDeLixoPorSpawn: 2
   raioDeSpawn: 3
   placaPrefab: {fileID: 3425434983106775676, guid: 5bb3c4aaca9348e44bc43d6c36d61b46, type: 3}
@@ -3913,8 +3913,8 @@ MonoBehaviour:
   prefabsDeBarcos:
   - {fileID: 1182955443013976069, guid: c3f68269dc49f574d904b84909b6d3cf, type: 3}
   - {fileID: 4552948153824246366, guid: 7de16150c32f0c94abac7120c0eda86d, type: 3}
-  intervaloEntreSpawns: 15
-  intervaloInicial: 5
+  intervaloEntreSpawns: 30
+  intervaloInicial: 20
   velocidadeBarco: 17
   distanciaInicial: 90
   tempoDeExpansao: 4
@@ -4441,6 +4441,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3744428503310839301, guid: 22f9b0f4d41fe984ea2d5ccdfb21ff78, type: 3}
+      propertyPath: tempoInicialEvento
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744428503310839301, guid: 22f9b0f4d41fe984ea2d5ccdfb21ff78, type: 3}
+      propertyPath: intervaloEntreEventos
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 5465766840417589595, guid: 22f9b0f4d41fe984ea2d5ccdfb21ff78, type: 3}
       propertyPath: m_LocalPosition.x
       value: -132.39
@@ -4646,7 +4654,7 @@ MonoBehaviour:
   audioClip: {fileID: 8300000, guid: 312a89f7e08ddea4da6fe629194fbe0d, type: 3}
   soundEnabled: 1
   jogador: {fileID: 5944356251942424517}
-  maxDistancia: 40
+  maxDistancia: 60
   adjustVolume: 1
 --- !u!1001 &8787607650870377151
 PrefabInstance:
@@ -4732,6 +4740,10 @@ PrefabInstance:
       propertyPath: changeScene
       value: 
       objectReference: {fileID: 8787607650870377155}
+    - target: {fileID: 5191275571033347116, guid: 43592e5b194386a4ebfbe717c0b0a891, type: 3}
+      propertyPath: valorIncremento
+      value: 0.02
+      objectReference: {fileID: 0}
     - target: {fileID: 7027268050129098528, guid: 43592e5b194386a4ebfbe717c0b0a891, type: 3}
       propertyPath: m_fontSize
       value: 25
@@ -4774,7 +4786,7 @@ PrefabInstance:
       objectReference: {fileID: 8787607650870377155}
     - target: {fileID: 8061322784453103655, guid: 43592e5b194386a4ebfbe717c0b0a891, type: 3}
       propertyPath: countdownTime
-      value: 5
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 8176056175554892950, guid: 43592e5b194386a4ebfbe717c0b0a891, type: 3}
       propertyPath: m_Pivot.x
@@ -5009,7 +5021,7 @@ PrefabInstance:
     - target: {fileID: 7786766079412068855, guid: 43f4d41883310a245a8ce77349fd0bd0, type: 3}
       propertyPath: disparoClip
       value: 
-      objectReference: {fileID: 8300000, guid: 12f099f5dcc5f6044a6fb6594c5897e6, type: 3}
+      objectReference: {fileID: 8300000, guid: fdd078963ff51dc4695f2aefec4de425, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
