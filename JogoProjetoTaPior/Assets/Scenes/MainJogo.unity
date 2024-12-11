@@ -139,7 +139,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -720,7 +720,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2407,7 +2407,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b5df764444b060f4fb607057bad58f30, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3957,7 +3957,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 69882cbed1318ca4290f730f03c4db91, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.33
+  m_Volume: 0.24
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4672,6 +4672,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -5.6000285
       objectReference: {fileID: 0}
+    - target: {fileID: 780620153495003807, guid: 43592e5b194386a4ebfbe717c0b0a891, type: 3}
+      propertyPath: changeScene
+      value: 
+      objectReference: {fileID: 8787607650870377155}
     - target: {fileID: 1762852289438845610, guid: 43592e5b194386a4ebfbe717c0b0a891, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -4724,6 +4728,10 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5191275571033347116, guid: 43592e5b194386a4ebfbe717c0b0a891, type: 3}
+      propertyPath: changeScene
+      value: 
+      objectReference: {fileID: 8787607650870377155}
     - target: {fileID: 7027268050129098528, guid: 43592e5b194386a4ebfbe717c0b0a891, type: 3}
       propertyPath: m_fontSize
       value: 25

@@ -14,6 +14,9 @@ namespace MagicPigGames
         private float _ultimoProgress = 0f;
         private ProgressBar _progressBar;
 
+        public ChangeScene changeScene;
+
+        public Boss boss;
         void Start()
         {
             // Inicializa o progresso da barra como zero
@@ -31,7 +34,7 @@ namespace MagicPigGames
         protected virtual void Update()
         {
             // Incrementa a barra proporcionalmente ao número de lixos presentes
-            if (numeroDeLixos > 0)
+            if (numeroDeLixos > 0 && !boss.estaAfundando)
             {
                 IncrementarBarra(numeroDeLixos);
             }
@@ -59,8 +62,10 @@ namespace MagicPigGames
             // Verifica se o progresso atingiu o máximo e termina o jogo
             if (Mathf.Approximately(progress, 1f))
             {
-                Debug.Log("Poluição máxima atingida! Fim do jogo.");
+                //Debug.Log("Poluição máxima atingida! Fim do jogo.");
                 // Adicione sua lógica de fim de jogo aqui
+                changeScene.LoadScene("TelaDerrotaLixo");
+                
             }
         }
     }

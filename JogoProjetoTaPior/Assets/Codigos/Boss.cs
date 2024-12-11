@@ -14,8 +14,9 @@ public class Boss : MonoBehaviour, IDanoso
     public float anguloEmpinar = 50f; // Ângulo para empinar no eixo X
     public float distanciaAfundar = 30f; // Distância no eixo Y para o objeto descer
 
-    private bool estaAfundando = false; // Controle para evitar múltiplas animações
+    public bool estaAfundando = false; // Controle para evitar múltiplas animações
 
+    public ChangeScene changeScene;
     void Start()
     {
         // Inicializa a vida do boss
@@ -47,7 +48,7 @@ public class Boss : MonoBehaviour, IDanoso
             barraDeVidaBoss.AtualizarBarraDeVida(porcentagemVidaPerdida);
         }
 
-        Debug.Log($"Boss recebeu {dano} de dano. Vida atual: {vidaAtual}");
+        // Debug.Log($"Boss recebeu {dano} de dano. Vida atual: {vidaAtual}");
 
         // Verifica se o boss morreu
         if (vidaAtual <= 0 && !estaAfundando)
@@ -58,7 +59,7 @@ public class Boss : MonoBehaviour, IDanoso
 
     private void Morrer()
     {
-        Debug.Log("Boss derrotado!");
+        // Debug.Log("Boss derrotado!");
 
         // Inicia a animação de afundar
         estaAfundando = true;
@@ -67,7 +68,7 @@ public class Boss : MonoBehaviour, IDanoso
 
     private System.Collections.IEnumerator AfundarBoss()
     {
-        Debug.Log("Iniciando animação de empinar e afundar...");
+       // Debug.Log("Iniciando animação de empinar e afundar...");
 
         // Configurações de rotação e posição
         Quaternion rotacaoInicial = transform.rotation;
@@ -94,8 +95,8 @@ public class Boss : MonoBehaviour, IDanoso
         transform.rotation = rotacaoFinal;
         transform.position = posicaoFinal;
 
-        Debug.Log("Boss completamente afundado. Destruindo o objeto.");
-
+        // Debug.Log("Boss completamente afundado. Destruindo o objeto.");
+        changeScene.LoadScene("Vitória");
         // Destroi o GameObject ao final da animação
         Destroy(gameObject);
     }

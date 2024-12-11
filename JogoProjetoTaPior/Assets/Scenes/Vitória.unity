@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionImage: {fileID: 999100628}
-  transitionDuration: 1
+  transitionDuration: 1.2
 --- !u!65 &43973208
 BoxCollider:
   m_ObjectHideFlags: 0
