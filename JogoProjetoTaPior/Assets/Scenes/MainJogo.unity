@@ -4696,6 +4696,22 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1963290612369165489, guid: 43592e5b194386a4ebfbe717c0b0a891, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -0.7000122
+      objectReference: {fileID: 0}
+    - target: {fileID: 1963290612369165489, guid: 43592e5b194386a4ebfbe717c0b0a891, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -309.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 1963290612369165489, guid: 43592e5b194386a4ebfbe717c0b0a891, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -143.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2694127151648458656, guid: 43592e5b194386a4ebfbe717c0b0a891, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 3578823517429766280, guid: 43592e5b194386a4ebfbe717c0b0a891, type: 3}
       propertyPath: m_Name
       value: Tela
@@ -4744,6 +4760,10 @@ PrefabInstance:
       propertyPath: valorIncremento
       value: 0.02
       objectReference: {fileID: 0}
+    - target: {fileID: 6200132492398725661, guid: 43592e5b194386a4ebfbe717c0b0a891, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 540
+      objectReference: {fileID: 0}
     - target: {fileID: 7027268050129098528, guid: 43592e5b194386a4ebfbe717c0b0a891, type: 3}
       propertyPath: m_fontSize
       value: 25
@@ -4775,6 +4795,14 @@ PrefabInstance:
     - target: {fileID: 7027268050129098528, guid: 43592e5b194386a4ebfbe717c0b0a891, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7216394651044769351, guid: 43592e5b194386a4ebfbe717c0b0a891, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -310
+      objectReference: {fileID: 0}
+    - target: {fileID: 7245565073583530280, guid: 43592e5b194386a4ebfbe717c0b0a891, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8061322784453103655, guid: 43592e5b194386a4ebfbe717c0b0a891, type: 3}
       propertyPath: nextScene

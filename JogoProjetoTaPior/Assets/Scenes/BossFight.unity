@@ -1041,6 +1041,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 939448614626135464, guid: e261e436fa388924a826d36750992e4b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 1964288187273146111, guid: e261e436fa388924a826d36750992e4b, type: 3}
       propertyPath: m_SizeDelta.x
       value: 1035.3849
@@ -1052,6 +1056,22 @@ PrefabInstance:
     - target: {fileID: 4841993761562918327, guid: e261e436fa388924a826d36750992e4b, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5299516957882131486, guid: e261e436fa388924a826d36750992e4b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 540
+      objectReference: {fileID: 0}
+    - target: {fileID: 5944308814246505583, guid: e261e436fa388924a826d36750992e4b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 5944308814246505583, guid: e261e436fa388924a826d36750992e4b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -313.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6311414723368397543, guid: e261e436fa388924a826d36750992e4b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -166
       objectReference: {fileID: 0}
     - target: {fileID: 7273868088993307859, guid: e261e436fa388924a826d36750992e4b, type: 3}
       propertyPath: m_Pivot.x
@@ -1144,6 +1164,10 @@ PrefabInstance:
     - target: {fileID: 8941611527488428551, guid: e261e436fa388924a826d36750992e4b, type: 3}
       propertyPath: m_Name
       value: Tela
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108912676872161419, guid: e261e436fa388924a826d36750992e4b, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
