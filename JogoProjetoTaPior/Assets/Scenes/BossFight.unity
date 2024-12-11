@@ -1299,7 +1299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c32974766c7ba3f44b841f9ba75817d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidaInicial: 250
+  vidaInicial: 1
   barraDeVidaBoss: {fileID: 1832277670}
   tempoAfundar: 5
   anguloEmpinar: -50
@@ -1603,7 +1603,7 @@ AudioSource:
   m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
-  Mute: 1
+  Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
