@@ -47,7 +47,6 @@ namespace MagicPigGames
         public void AtualizarNumeroDeLixos(int quantidade)
         {
             numeroDeLixos = quantidade;
-            Debug.Log($"Número de lixos atualizado para: {numeroDeLixos}");
         }
 
         private void IncrementarBarra(int quantidadeDeLixos)

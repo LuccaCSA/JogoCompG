@@ -33,7 +33,7 @@ public class BalaDeCanhao : MonoBehaviour
 
     private void EspalharLixos()
     {
-        int quantidadeLixos = Random.Range(3, 6); // Define aleatoriamente a quantidade de lixos para espalhar
+        int quantidadeLixos = Random.Range(3, 5); // Define aleatoriamente a quantidade de lixos para espalhar
 
         for (int i = 0; i < quantidadeLixos; i++)
         {
