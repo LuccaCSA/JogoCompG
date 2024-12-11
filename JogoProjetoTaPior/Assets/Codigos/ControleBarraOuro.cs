@@ -15,6 +15,9 @@ namespace MagicPigGames
         private int barcosAtivos = 1; // Contador de barcos ativos
         private bool incrementoAtivo = false; // Controle de incremento contínuo
 
+        //att tg
+        public ChangeScene changeScene;
+        //
         void Awake()
         {
             // Inicializa o progresso da barra como cheia em 0 no Awake
@@ -99,6 +102,7 @@ namespace MagicPigGames
             {
                // Debug.Log("Ouro esgotado! Fim do jogo.");
                 // Adicione a lógica de fim de jogo aqui
+                changeScene.LoadScene("TelaDerrotaPirata");
             }
         }
 

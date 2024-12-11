@@ -12,6 +12,8 @@ public class GerenciadorDeCanhoes : MonoBehaviour
 
     private int ultimoCanhaoIndex = -1; // Índice do último canhão disparado
 
+    private float atrasoInicial = 3f;
+
     private void Start()
     {
         StartCoroutine(GerenciarDisparos());
@@ -19,6 +21,10 @@ public class GerenciadorDeCanhoes : MonoBehaviour
 
     private IEnumerator GerenciarDisparos()
     {
+
+        //Att tg
+        yield return new WaitForSeconds(atrasoInicial);
+         //
         while (true)
         {
             // Garante que ao menos 2 canhões estejam disponíveis
